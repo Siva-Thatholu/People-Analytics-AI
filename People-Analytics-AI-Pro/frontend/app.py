@@ -109,7 +109,7 @@ else:
         st.success(f"**Actionable Insight:** If HR interventions can retain even 10% of these high-risk employees, the company saves **${(total_risk_exposure * 0.10):,.2f}** this quarter.")
 
     with tab3:
-        st.title("Gemini 1.5 Flash - Live NLP Engine")
+        st.title("Live NLP Engine")
         st.markdown("Test the LLM pipeline directly. Input sample exit interview or survey feedback below.")
         
         user_input = st.text_area("Employee Feedback:", "I feel completely overwhelmed. The hours are insane and my manager doesn't listen to my concerns about project timelines.")

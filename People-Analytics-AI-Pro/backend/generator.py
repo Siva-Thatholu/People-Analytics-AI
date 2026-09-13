@@ -16,7 +16,7 @@ themes = ["compensation", "burnout", "management", "growth", "culture", "work-li
 def get_live_gemini_analysis(feedback: str):
     """Live integration with Gemini 1.5 Flash for real-time processing."""
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-3.6-flash')
         prompt = f"""
         You are an expert HR Data Analyst. Analyze this employee feedback: "{feedback}"
         Return exactly two values separated by a comma:
