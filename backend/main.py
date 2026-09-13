@@ -9,7 +9,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="People Analytics API")
 
 @app.post("/api/generate")
-def trigger_data_generation(num_records: int = 50, db: Session = Depends(get_db)):
+def trigger_data_generation(num_records: int = 50000, db: Session = Depends(get_db)):
     return generate_synthetic_data(db, num_records)
 
 @app.get("/api/employees")

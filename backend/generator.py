@@ -32,7 +32,7 @@ def analyze_feedback(feedback: str):
     
     return random.uniform(0.1, 0.9), random.choice(themes)
 
-def generate_synthetic_data(db: Session, num_records: int = 50):
+def generate_synthetic_data(db: Session, num_records: int = 50000):
     if db.query(Employee).count() > 0:
         return {"message": "Data already exists. Clear DB to regenerate."}
 
